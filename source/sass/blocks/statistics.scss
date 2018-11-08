@@ -1,0 +1,97 @@
+.statistics {
+	padding: 30px 0;
+
+	background-color: $gray-bg;
+}
+
+.statistics__list {
+	width: 60%;
+	margin: 0 auto;
+
+	border-collapse: collapse;
+}
+
+.statistics__item {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 30px;
+
+	text-align: center;
+}
+
+.statistics__value {
+	padding-bottom: 10px;
+
+	font-size: 54px;
+	line-height: 54px;
+	font-weight: 300;
+	text-align: center;
+
+	border-bottom: 1px dashed $gray;
+}
+
+.statistics__field {
+	padding-top: 10px;
+}
+
+.statistics__button {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	box-sizing: border-box;
+
+	white-space: nowrap;
+}
+
+@media (min-width: $tablet-width) {
+
+	.statistics {
+		padding: 50px 0;
+	}
+
+	.statistics__list {
+		width: 80%;
+		margin-bottom: 50px;
+	}
+
+	.statistics__list tbody {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.statistics__item {
+		margin-bottom: 0;
+	}
+
+	.statistics__button {
+		width: 60%;
+	}
+}
+
+@media (min-width: $desktop-width) {
+
+	.statistics {
+		padding: 80px 0;
+	}
+
+	.statistics__list {
+		width: 80%;
+		margin-bottom: 60px;
+	}
+
+	.statistics__value {
+		font-size: 80px;
+		line-height: 100px;
+	}
+
+	.statistics__field {
+		font-size: 24px;
+		line-height: 26px;
+	}
+
+	.statistics__button {
+		width: 405px;
+		padding-top: 13px;
+		padding-bottom: 13px;
+	}
+}

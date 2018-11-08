@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Fixer24</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<link rel="preload" href="fonts/montserratblack.woff2" as="font">
+  <link rel="preload" href="fonts/montserratbold.woff2" as="font">
+  <link rel="preload" href="fonts/montserratextrabold.woff2" as="font">
+  <link rel="preload" href="fonts/montserratlight.woff2" as="font">
+  <link rel="preload" href="fonts/montserratmedium.woff2" as="font">
+  <link rel="preload" href="fonts/montserratregular.woff2" as="font">
+  <link rel="preload" href="fonts/montserratsemibold.woff2" as="font">
+
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css"/>
+	<link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+
+	<div style="display: none;">
+		<include src="build/img/sprite.svg"></include>
+	</div>
+
+	<div class="popup-wrapper"></div>
+
+	<header class="header">
+
+		<div class="top-line">
+			<div class="container">
+				<a class="top-line__logo">
+					<svg width="172" height="45">
+						<use xlink:href="img/sprite.svg#logo"></use>
+					</svg>
+					<span class="top-line__logo-slogan">Ремонт электроники<br> в Санкт-Петербурге</span>
+				</a>
+
+				<div class="top-line__wrapper">
+					<ul class="top-line__social-list">
+						<li class="top-line__social-item">
+							<a class="top-line__social-link" href="#">
+								<svg width="30" height="30">
+									<use xlink:href="img/sprite.svg#vk"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="top-line__social-item">
+							<a class="top-line__social-link" href="#">
+								<svg width="30" height="30">
+									<use xlink:href="img/sprite.svg#insta"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+
+					<a class="top-line__status" href="#">статус заказа</a>
+				</div>
+
+				<a class="top-line__phone" href="tel:+78007005522">8(800)700–55–22</a>
+			</div>
+		</div>
+
+	</div>
+</header>
+
+<main class="main">
+
+	<section class="start">
+		<div class="container">
+			<h1 class="start__title"><span>Ремонт электроники</span> в Санкт-Петербурге</h1>
+		</div>
+
+		<div class="container no">
+			<div class="tabs">
+				<input class="tabs__input" type="radio" name="tabs" id="tab1" value="1" checked autofocus="true">
+				<input class="tabs__input" type="radio" name="tabs" id="tab2" value="2">
+				<input class="tabs__input" type="radio" name="tabs" id="tab3" value="3">
+				<input class="tabs__input" type="radio" name="tabs" id="tab4" value="4">
+				<div class="container tabs__container-labels">
+					<div class="tabs__list" role="tablist" aria-owns="tablabel1 tablabel2 tablabel3 tablabel4" aria-activedescendant="tablabel1">					
+						<label class="tabs__label" for="tab1" title="Телефоны" role="tab" id="tablabel1" aria-label="Tab label 1" aria-posinset="1" aria-setsize="4" aria-selected="true" aria-expanded="true">
+							<svg width="86" height="175" role="img" aria-labelledby="smartphone smartphone-desc">
+								<title id="smartphone">Ремонт смартфонов</title>
+								<desc id="smartphone-desc">Таб для переключения на раздел ремонта смартфонов</desc>
+								<use xlink:href="img/sprite.svg#smartphone"></use>
+							</svg>
+							<span>Телефоны</span>
+						</label>						
+						<label class="tabs__label tabs__label--laptop" for="tab2" title="Ноутбуки" role="tab" id="tablabel2" aria-label="Tab label 2" aria-posinset="2" aria-setsize="4" aria-selected="false" aria-expanded="false">
+							<svg class="tabs__svg--laptop" width="302" height="222" role="img" aria-labelledby="laptop laptop-desc">
+								<title id="laptop">Ремонт ноутбуков</title>
+								<desc id="laptop-desc">Таб для переключения на раздел ремонта ноутбуков</desc>
+								<use xlink:href="img/sprite.svg#laptop"></use>
+							</svg>
+							<span>Ноутбуки</span>
+						</label>						
+						<label class="tabs__label" for="tab3" title="Планшеты" role="tab" id="tablabel3" aria-label="Tab label 1" aria-posinset="3" aria-setsize="4" aria-selected="false" aria-expanded="false"">
+							<svg width="144" height="199" role="img" aria-labelledby="ipad ipad-desc">
+								<title id="ipad">Ремонт планшетов</title>
+								<desc id="ipad-desc">Таб для переключения на раздел ремонта планшетов</desc>
+								<use xlink:href="img/sprite.svg#ipad"></use>
+							</svg>
+							<span>Планшеты</span>
+						</label>						
+						<label class="tabs__label tabs__label--last" for="tab4" title="Другая техника" role="tab" id="tablabel4" aria-label="Tab label 4" aria-posinset="4" aria-setsize="4" aria-selected="false" aria-expanded="false">
+							<span class="visible">Другая<br> техника</span>
+						</label>
+					</div>
+				</div>
+
+				<section class="tabs__content" id="content1" role="tabpanel" aria-labelledby="tablabel1" aria-hidden="false">
+					<h2 class="visually-hidden">Форма для обращений по ремонту телефонов</h2>
+					<div class="container">
+						<form class="tabs__form" action="" method="post">
+							<div class="tabs__select-wrapper">
+								<select class="tabs__select" name="brand">
+									<option selected hidden>Бренд</option>
+									<option value="Apple">Apple</option>
+									<option value="Nokia">Nokia</option>
+									<option value="SomethingReallyLongAndSerious">SomethingReallyLongAndSerious</option>
+								</select>
+								<select class="tabs__select" name="model">
+									<option selected hidden>Модель</option>
+								</select>
+							</div>
+							<textarea class="tabs__textarea" name="ptoblem" placeholder="Описание проблемы"></textarea>
+							<div class="tabs__button-wrapper">
+								<input class="tabs__content-input" type="tel" placeholder="+7(800)700-55-22" required>
+								<button class="tabs__submit button" type="submit">Записаться</button>
+							</div>
+							<div class="tabs__radio-wrapper">
+								<div class="tabs__where-wrapper">
+									<input class="tabs__content-radio" type="radio" name="where" id="atcenter1" checked>
+									<label class="tabs__content-label" for="atcenter1">в сервис центре</label>
+								</div>
+								<div class="tabs__where-wrapper">
+									<input class="tabs__content-radio" type="radio" name="where" id="outside1">
+									<label class="tabs__content-label" for="outside1">на выезде</label>
+								</div>
+							</div>
+						</form>
+					</div>
+				</section>
+
+				<section class="tabs__content" id="content2" role="tabpanel" aria-labelledby="tablabel2" aria-hidden="true">
+					<h2 class="visually-hidden">Форма для обращений по ремонту ноутбуков</h2>
+					<div class="container">
+						<form class="tabs__form" action="" method="post">
+							<div class="tabs__select-wrapper">
+								<select class="tabs__select" name="brand">
+									<option selected hidden>Бренд</option>
+									<option value="Acer">Acer</option>
+									<option value="Asus">Asus</option>
+								</select>
+								<select class="tabs__select" name="model">
+									<option selected hidden>Модель</option>
+								</select>
+							</div>
+							<textarea class="tabs__textarea" name="ptoblem" placeholder="Описание проблемы"></textarea>
+							<div class="tabs__button-wrapper">
+								<input class="tabs__content-input" type="tel" placeholder="+7(800)700-55-22" required>
+								<button class="tabs__submit button" type="submit">Записаться</button>
+							</div>
+							<div class="tabs__radio-wrapper">
+								<div class="tabs__where-wrapper">
+									<input class="tabs__content-radio" type="radio" name="where" id="atcenter2" checked>
+									<label class="tabs__content-label" for="atcenter2">в сервис центре</label>
+								</div>
+								<div class="tabs__where-wrapper">
+									<input class="tabs__content-radio" type="radio" name="where" id="outside2">
+									<label class="tabs__content-label" for="outside2">на выезде</label>
+								</div>
+							</div>
+						</form>
+					</div>
+				</section>
+
+				<section class="tabs__content" id="content3" role="tabpanel" aria-labelledby="tablabel3" aria-hidden="true">
+					<h2 class="visually-hidden">Форма для обращений по ремонту планшетов</h2>
+					<div class="container">
+						<form class="tabs__form" action="" method="post">
+							<div class="tabs__select-wrapper">
+								<select class="tabs__select" name="brand">
+									<option selected hidden>Бренд</option>
+									<option value="Samsung">Samsung</option>
+									<option value="Kitay">Kitay</option>
+								</select>
+								<select class="tabs__select" name="model">
+									<option selected hidden>Модель</option>
+								</select>
+							</div>
+							<textarea class="tabs__textarea" name="ptoblem" placeholder="Описание проблемы"></textarea>
+							<div class="tabs__button-wrapper">
+								<input class="tabs__content-input" type="tel" placeholder="+7(800)700-55-22" required>
+								<button class="tabs__submit button" type="submit">Записаться</button>
+							</div>
+							<div class="tabs__radio-wrapper">
+								<div class="tabs__where-wrapper">
+									<input class="tabs__content-radio" type="radio" name="where" id="atcenter3" checked>
+									<label class="tabs__content-label" for="atcenter3">в сервис центре</label>
+								</div>
+								<div class="tabs__where-wrapper">
+									<input class="tabs__content-radio" type="radio" name="where" id="outside3">
+									<label class="tabs__content-label" for="outside3">на выезде</label>
+								</div>
+							</div>
+						</form>
+					</div>
+				</section>
+
+				<section class="tabs__content" id="content4" role="tabpanel" aria-labelledby="tablabel4" aria-hidden="true">
+				<h2 class="visually-hidden">Форма для обращений по ремонту остальнойой техники</h2>
+				<div class="container">
+					<form class="tabs__form" action="" method="post">
+						<input class="tabs__content-input tabs__input--other" name="device" placeholder="Устройство">
+						<textarea class="tabs__textarea" name="ptoblem" placeholder="Описание проблемы"></textarea>
+						<div class="tabs__button-wrapper">
+							<input class="tabs__content-input" type="tel" placeholder="+7(800)700-55-22" required>
+							<button class="tabs__submit button" type="submit">Записаться</button>
+						</div>
+						<div class="tabs__radio-wrapper">
+							<div class="tabs__where-wrapper">
+								<input class="tabs__content-radio" type="radio" name="where" id="atcenter4" checked>
+								<label class="tabs__content-label" for="atcenter4">в сервис центре</label>
+							</div>
+							<div class="tabs__where-wrapper">
+								<input class="tabs__content-radio" type="radio" name="where" id="outside4">
+								<label class="tabs__content-label" for="outside4">на выезде</label>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+
+			</div>
+		</section>
+
+		<section class="statistics">
+			<h2 class="visually-hidden">Наши цифры</h2>
+			<div class="container">
+				<table class="statistics__list">
+					<tr class="statistics__item">
+						<td class="statistics__value">
+							01
+						</td>
+						<td class="statistics__field">
+							заявок на ремонт<br> за неделю
+						</td>
+					</tr>
+					<tr class="statistics__item">
+						<td class="statistics__value">
+							07
+						</td>
+						<td class="statistics__field">
+							заявок на ремонт<br> за месяц
+						</td>
+					</tr>
+					<tr class="statistics__item">
+						<td class="statistics__value">
+							10
+						</td>
+						<td class="statistics__field">
+							заявок на ремонт<br> за все время
+						</td>
+					</tr>
+				</table>
+
+				<a class="statistics__button button" href="#">Посмотреть все заявки</a>
+			</div>
+		</section>
+
+		<section class="types">
+			<div class="container">
+				<h2 class="types__title">Самые частые <b>типы ремонтов</b> за последнее время</h2>
+				<ul class="types__list">
+					<li class="types__item">
+						<a class="types__link" href="#">
+							<svg width="74" height="92" role="img" aria-labelledby="repair1 repair1-desc">
+								<title id="repair1">Восстановление информации</title>
+								<desc id="repair1-desc">Раздел восстановлния информации</desc>
+								<use xlink:href="img/sprite.svg#type1"></use>
+							</svg>
+							<span>Восстановление<br> информации</span>
+						</a>
+					</li>
+					<li class="types__item">
+						<a class="types__link" href="#">
+							<svg width="74" height="92" role="img" aria-labelledby="repair1 repair1-desc">
+								<title id="repair1">Восстановление информации</title>
+								<desc id="repair1-desc">Раздел восстановлния информации</desc>
+								<use xlink:href="img/sprite.svg#type1"></use>
+							</svg>
+							<span>Восстановление<br> информации</span>
+						</a>
+					</li>
+					<li class="types__item">
+						<a class="types__link" href="#">
+							<svg width="74" height="92" role="img" aria-labelledby="repair1 repair1-desc">
+								<title id="repair1">Восстановление информации</title>
+								<desc id="repair1-desc">Раздел восстановлния информации</desc>
+								<use xlink:href="img/sprite.svg#type1"></use>
+							</svg>
+							<span>Восстановление<br> информации</span>
+						</a>
+					</li>
+					<li class="types__item">
+						<a class="types__link" href="#">
+							<svg width="74" height="92" role="img" aria-labelledby="repair1 repair1-desc">
+								<title id="repair1">Восстановление информации</title>
+								<desc id="repair1-desc">Раздел восстановлния информации</desc>
+								<use xlink:href="img/sprite.svg#type1"></use>
+							</svg>
+							<span>Восстановление<br> информации</span>
+						</a>
+					</li>
+					<li class="types__item">
+						<a class="types__link" href="#">
+							<svg width="74" height="92" role="img" aria-labelledby="repair1 repair1-desc">
+								<title id="repair1">Восстановление информации</title>
+								<desc id="repair1-desc">Раздел восстановлния информации</desc>
+								<use xlink:href="img/sprite.svg#type1"></use>
+							</svg>
+							<span>Восстановление<br> информации</span>
+						</a>
+					</li>
+					<li class="types__item">
+						<a class="types__link" href="#">
+							<svg width="74" height="92" role="img" aria-labelledby="repair1 repair1-desc">
+								<title id="repair1">Восстановление информации</title>
+								<desc id="repair1-desc">Раздел восстановлния информации</desc>
+								<use xlink:href="img/sprite.svg#type1"></use>
+							</svg>
+							<span>Восстановление<br> информации</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<aside class="types__sidebar">
+				<h3 class="types__sidebar-title"><b>Заявки</b> в работе</h3>
+				<ul class="types__side-list">
+					<li class="types__side-item">
+						<a class="types__side-link" href="#">Заявка № 0012 от 10.05.2018, Санкт-Петербург Iphone 8, Замена дисплея</a>
+					</li>
+					<li class="types__side-item">
+						<a class="types__side-link" href="#">Заявка № 0012 от 10.05.2018, Санкт-Петербург Iphone 8, Замена дисплея</a>
+					</li>
+					<li class="types__side-item">
+						<a class="types__side-link" href="#">Заявка № 0012 от 10.05.2018, Санкт-Петербург Iphone 8, Замена дисплея</a>
+					</li>
+					<li class="types__side-item">
+						<a class="types__side-link" href="#">Заявка № 0012 от 10.05.2018, Санкт-Петербург Iphone 8, Замена дисплея</a>
+					</li>
+					<li class="types__side-item">
+						<a class="types__side-link" href="#">Заявка № 0012 от 10.05.2018, Санкт-Петербург Iphone 8, Замена дисплея</a>
+					</li>
+					<li class="types__side-item">
+						<a class="types__side-link" href="#">Заявка № 0012 от 10.05.2018, Санкт-Петербург Iphone 8, Замена дисплея</a>
+					</li>
+				</ul>
+			</aside>
+
+		</section>
+
+		<section class="repair" id="repair-section">
+			<input class="repair__input" type="radio" name="repair-tabs" id="repair1" checked>
+			<input class="repair__input" type="radio" name="repair-tabs" id="repair2">
+			<input class="repair__input" type="radio" name="repair-tabs" id="repair3">
+			<div class="container container-border">
+				<h2 class="repair__title"><b>Устройства,</b> которые мы ремонтируем</h2>
+				<ul class="repair__list">
+					<li class="repair__item">
+						<label class="repair__label" title="Телефоны" for="repair1">
+							<img class="repair__image repair__image--iphone" src="img/tab-smartphone.png" width="93" height="153" alt="Изображение смартфона">
+						</label>
+					</li>
+					<li class="repair__item">
+						<label class="repair__label" title="Планшеты" for="repair2">
+							<img class="repair__image repair__image--ipad" src="img/tab-ipad.png" width="105" height="205" alt="Изображение планшета">
+						</label>
+					</li>
+					<li class="repair__item">
+						<label class="repair__label" title="Ноутбуки" for="repair3">
+							<img class="repair__image repair__image--laptop" src="img/tab-laptop.png" width="326" height="199" alt="Изображение ноутбука">
+						</label>
+					</li>
+				</ul>
+			</div>
+
+			<div class="container repair__bg" id="repair-content1">
+
+				<ul class="repair__brands repair__brands--left">
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand1"></use>
+							</svg>						
+						</a>
+					</li>
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand2"></use>
+							</svg>						
+						</a>
+					</li>
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand3"></use>
+							</svg>						
+						</a>
+					</li>
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand4"></use>
+							</svg>						
+						</a>
+					</li>
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand5"></use>
+							</svg>						
+						</a>
+					</li>
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand6"></use>
+							</svg>						
+						</a>
+					</li>
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand7"></use>
+							</svg>						
+						</a>
+					</li>
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand8"></use>
+							</svg>						
+						</a>
+					</li>
+
+				</ul>
+
+				<form class="repair__form" action="" method="post">
+
+					<select class="repair__select" name="brand">
+						<option selected hidden>Выберите бренд</option>
+						<option value="Acer">Acer</option>
+						<option value="Asus">Asus</option>
+					</select>
+					<select class="repair__select" name="model">
+						<option selected hidden>Выберите модель</option>
+					</select>
+					<select class="repair__select" name="reason">
+						<option selected hidden>Выберите услугу</option>
+					</select>
+					<input class="repair__phone" type="tel" placeholder="+7(800)700-55-22" required>
+					<button class="repair__submit button" type="submit">Оставить заявку</button>
+					
+				</form>
+
+				<ul class="repair__brands repair__brands--right">
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand9"></use>
+							</svg>						
+						</a>
+					</li>
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand10"></use>
+							</svg>						
+						</a>
+					</li>
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand11"></use>
+							</svg>						
+						</a>
+					</li>
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand12"></use>
+							</svg>						
+						</a>
+					</li>
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand13"></use>
+							</svg>						
+						</a>
+					</li>
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand14"></use>
+							</svg>						
+						</a>
+					</li>
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand15"></use>
+							</svg>						
+						</a>
+					</li>
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand16"></use>
+							</svg>						
+						</a>
+					</li>
+
+				</ul>
+
+			</div>
+
+			<div class="container repair__bg" id="repair-content2">
+
+				<ul class="repair__brands repair__brands--left">
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand1"></use>
+							</svg>						
+						</a>
+					</li>
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand2"></use>
+							</svg>						
+						</a>
+					</li>
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand3"></use>
+							</svg>						
+						</a>
+					</li>
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand4"></use>
+							</svg>						
+						</a>
+					</li>
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand5"></use>
+							</svg>						
+						</a>
+					</li>
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand6"></use>
+							</svg>						
+						</a>
+					</li>
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand7"></use>
+							</svg>						
+						</a>
+					</li>
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand8"></use>
+							</svg>						
+						</a>
+					</li>
+
+				</ul>
+
+				<form class="repair__form" action="" method="post">
+
+					<select class="repair__select" name="brand">
+						<option selected hidden>Выберите бренд</option>
+						<option value="Acer">Samsung</option>
+						<option value="Asus">Xiaomi</option>
+					</select>
+					<select class="repair__select" name="model">
+						<option selected hidden>Выберите модель</option>
+					</select>
+					<select class="repair__select" name="reason">
+						<option selected hidden>Выберите услугу</option>
+					</select>
+					<input class="repair__phone" type="tel" placeholder="+7(800)700-55-22" required>
+					<button class="repair__submit button" type="submit">Оставить заявку</button>
+					
+				</form>
+
+				<ul class="repair__brands repair__brands--right">
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand9"></use>
+							</svg>						
+						</a>
+					</li>
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand10"></use>
+							</svg>						
+						</a>
+					</li>
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand11"></use>
+							</svg>						
+						</a>
+					</li>
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand12"></use>
+							</svg>						
+						</a>
+					</li>
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand13"></use>
+							</svg>						
+						</a>
+					</li>
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand14"></use>
+							</svg>						
+						</a>
+					</li>
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand15"></use>
+							</svg>						
+						</a>
+					</li>
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand16"></use>
+							</svg>						
+						</a>
+					</li>
+
+				</ul>
+
+			</div>
+
+			<div class="repair__bg" id="repair-content3">
+
+				<ul class="repair__brands repair__brands--left">
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand1"></use>
+							</svg>						
+						</a>
+					</li>
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand2"></use>
+							</svg>						
+						</a>
+					</li>
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand3"></use>
+							</svg>						
+						</a>
+					</li>
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand4"></use>
+							</svg>						
+						</a>
+					</li>
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand5"></use>
+							</svg>						
+						</a>
+					</li>
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand6"></use>
+							</svg>						
+						</a>
+					</li>
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand7"></use>
+							</svg>						
+						</a>
+					</li>
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand8"></use>
+							</svg>						
+						</a>
+					</li>
+
+				</ul>
+
+				<form class="repair__form" action="" method="post">
+
+					<select class="repair__select" name="brand">
+						<option selected hidden>Выберите бренд</option>
+						<option value="Acer">Macbook Air</option>
+						<option value="Asus">Macbook Pro</option>
+					</select>
+					<select class="repair__select" name="model">
+						<option selected hidden>Выберите модель</option>
+					</select>
+					<select class="repair__select" name="reason">
+						<option selected hidden>Выберите услугу</option>
+					</select>
+					<input class="repair__phone" type="tel" placeholder="+7(800)700-55-22" required>
+					<button class="repair__submit button" type="submit">Оставить заявку</button>
+					
+				</form>
+
+				<ul class="repair__brands repair__brands--right">
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand9"></use>
+							</svg>						
+						</a>
+					</li>
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand10"></use>
+							</svg>						
+						</a>
+					</li>
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand11"></use>
+							</svg>						
+						</a>
+					</li>
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand12"></use>
+							</svg>						
+						</a>
+					</li>
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand13"></use>
+							</svg>						
+						</a>
+					</li>
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand14"></use>
+							</svg>						
+						</a>
+					</li>
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand15"></use>
+							</svg>						
+						</a>
+					</li>
+
+					<li class="repair__brand-item">
+						<a class="repair__link" href="#">
+							<svg width="150" height="100">
+								<use xlink:href="img/sprite.svg#brand16"></use>
+							</svg>						
+						</a>
+					</li>
+
+				</ul>
+
+			</div>
+		</section>
+
+		<section class="reviews" id="reviews-section">
+			<div class="container">
+				<h2 class="reviews__title"><b>Отзывы</b> о нас</h2>
+
+				<ul class="reviews__list">
+
+					<li class="reviews__item">
+						<figure class="reviews__wrapper">
+							<img class="reviews__image" src="img/face.png" width="54" height="54" alt="Аватар пользователя">
+							<blockquote class="reviews__text-wrapper">
+								<div class="reviews__top-line">
+									<cite class="reviews__name">Пётр Кирилович</cite>
+									<cite class="reviews__data">16.08.2014 г.</cite>
+									<h3 class="reviews__item-title">Ремонт подвески части Hyundai Trajet, 2004 г.в.</h3>
+								</div>
+								<p class="reviews__stars">★</p>
+								<p class="reviews__text">Искал ремонт подвески для Минивен Хундай Траджет. Сайт очень помог. Позвонил по телефону и заказал поиск СТО  по параметрам. Важно было, чтобы автомастерская была в зоне пешей доступности от дома или от работы. Это поиск по двум районам и 4-м станциям...</p>
+							</blockquote>
+						</figure>
+					</li>
+
+					<li class="reviews__item">
+						<figure class="reviews__wrapper">
+							<img class="reviews__image" src="img/face.png" width="54" height="54" alt="Аватар пользователя">
+							<blockquote class="reviews__text-wrapper">
+								<div class="reviews__top-line">
+									<cite class="reviews__name">Пётр Кирилович</cite>
+									<cite class="reviews__data">16.08.2014 г.</cite>
+									<h3 class="reviews__item-title">Ремонт подвески части Hyundai Trajet, 2004 г.в.</h3>
+								</div>
+								<p class="reviews__stars">★ ★ ★ ★ ★</p>
+								<p class="reviews__text">Искал ремонт подвески для Минивен Хундай Траджет. Сайт очень помог. Позвонил по телефону и заказал поиск СТО  по параметрам. Важно было, чтобы автомастерская была в зоне пешей доступности от дома или от работы. Это поиск по двум районам и 4-м станциям...</p>
+							</blockquote>
+						</figure>
+					</li>
+
+					<li class="reviews__item">
+						<figure class="reviews__wrapper">
+							<img class="reviews__image" src="img/face.png" width="54" height="54" alt="Аватар пользователя">
+							<blockquote class="reviews__text-wrapper">
+								<div class="reviews__top-line">
+									<cite class="reviews__name">Пётр Кирилович</cite>
+									<cite class="reviews__data">16.08.2014 г.</cite>
+									<h3 class="reviews__item-title">Ремонт подвески части Hyundai Trajet, 2004 г.в.</h3>
+								</div>
+								<p class="reviews__stars">★ ★ ★ ★ ★</p>
+								<p class="reviews__text">Искал ремонт подвески для Минивен Хундай Траджет. Сайт очень помог. Позвонил по телефону и заказал поиск СТО  по параметрам. Важно было, чтобы автомастерская была в зоне пешей доступности от дома или от работы. Это поиск по двум районам и 4-м станциям...</p>
+							</blockquote>
+						</figure>
+						<a class="reviews__all" href="#">Посмотреть все</a>
+					</li>
+
+				</ul>
+
+				<a class="reviews__add button" href="#">Оставить отзыв</a>
+
+			</div>
+		</section>
+
+		<section id="section-map">
+			<h2 class="visually-hidden">Как до нас добраться</h2>
+			<div class="map-nav"></div>
+			<div class="map contacts__map" id="map"></div>
+		</section>
+
+	</main>
+
+	<footer class="footer">
+		
+		<section class="info">
+			<h2 class="visually-hidden">Общая информация о компании</h2>
+			<div class="container info__wrapper">
+				<div class="info__left">
+					<h3 class="info__left-title">
+						<svg width="172" height="45">
+							<use xlink:href="img/sprite.svg#logo"></use>
+						</svg>
+						<span class="info__slogan">Ремонт электроники<br> в Санкт-Петербурге</span>
+					</h3>
+
+					<div class="info__text-wrapper">
+						<p class="info__left-text">Сервис-центр #1 по ремонту электроники в Санкт-Петербурге.<br>Наша работа требует аккуратности, большого объема знаний и отточенных навыков. И всеми этими качествами обладают наши мастера.</p>
+						<p class="info__left-text">Так как каждый год появляются десятки новых устройств, мы все время держим руку на пульсе, повышаем квалификацию и находим наиболее оптимальные способы устранения неисправностей и их диагностики.</p>					
+					</div>
+				</div>
+
+				<div class="info__right">
+					<h3 class="info__right-title">
+						<a class="info__right-title-link" href="#">Контакты</a>
+					</h3>
+					<p class="info__right-text">Сервис-центр #1 по ремонту электроники в Санкт-ПетербургеСервис-центр #1 по ремонту электроники</p>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="brands">
+			<h2 class="visually-hidden">Бренды, которые мы ремонтируем</h2>
+			<div class="container">
+				<div class="owl-carousel brands__slider">
+
+					<a class="brands__item" href="#">
+						<svg width="150" height="100">
+							<use xlink:href="img/sprite.svg#brand1"></use>
+						</svg>						
+					</a>
+
+					<a class="brands__item" href="#">
+						<svg width="150" height="100">
+							<use xlink:href="img/sprite.svg#brand2"></use>
+						</svg>						
+					</a>
+
+					<a class="brands__item" href="#">
+						<svg width="150" height="100">
+							<use xlink:href="img/sprite.svg#brand3"></use>
+						</svg>						
+					</a>
+
+					<a class="brands__item" href="#">
+						<svg width="150" height="100">
+							<use xlink:href="img/sprite.svg#brand4"></use>
+						</svg>						
+					</a>
+
+					<a class="brands__item" href="#">
+						<svg width="150" height="100">
+							<use xlink:href="img/sprite.svg#brand5"></use>
+						</svg>						
+					</a>
+
+					<a class="brands__item" href="#">
+						<svg width="150" height="100">
+							<use xlink:href="img/sprite.svg#brand6"></use>
+						</svg>						
+					</a>
+
+					<a class="brands__item" href="#">
+						<svg width="150" height="100">
+							<use xlink:href="img/sprite.svg#brand7"></use>
+						</svg>						
+					</a>
+
+					<a class="brands__item" href="#">
+						<svg width="150" height="100">
+							<use xlink:href="img/sprite.svg#brand8"></use>
+						</svg>						
+					</a>
+
+					<a class="brands__item" href="#">
+						<svg width="150" height="100">
+							<use xlink:href="img/sprite.svg#brand9"></use>
+						</svg>						
+					</a>
+
+					<a class="brands__item" href="#">
+						<svg width="150" height="100">
+							<use xlink:href="img/sprite.svg#brand10"></use>
+						</svg>						
+					</a>
+
+					<a class="brands__item" href="#">
+						<svg width="150" height="100">
+							<use xlink:href="img/sprite.svg#brand11"></use>
+						</svg>						
+					</a>
+
+					<a class="brands__item" href="#">
+						<svg width="150" height="100">
+							<use xlink:href="img/sprite.svg#brand12"></use>
+						</svg>						
+					</a>
+
+					<a class="brands__item" href="#">
+						<svg width="150" height="100">
+							<use xlink:href="img/sprite.svg#brand13"></use>
+						</svg>						
+					</a>
+
+					<a class="brands__item" href="#">
+						<svg width="150" height="100">
+							<use xlink:href="img/sprite.svg#brand14"></use>
+						</svg>						
+					</a>
+
+					<a class="brands__item" href="#">
+						<svg width="150" height="100">
+							<use xlink:href="img/sprite.svg#brand15"></use>
+						</svg>						
+					</a>
+
+					<a class="brands__item" href="#">
+						<svg width="150" height="100">
+							<use xlink:href="img/sprite.svg#brand16"></use>
+						</svg>						
+					</a>
+
+					<a class="brands__item" href="#">
+						<svg width="150" height="100">
+							<use xlink:href="img/sprite.svg#brand17"></use>
+						</svg>						
+					</a>
+
+					<a class="brands__item" href="#">
+						<svg width="150" height="100">
+							<use xlink:href="img/sprite.svg#brand18"></use>
+						</svg>						
+					</a>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="bot-line">
+			<h2 class="visually-hidden">Дополнительная информация</h2>
+			<div class="container bot-line__container">
+				<ul class="top-line__social-list">
+					<li class="top-line__social-item">
+						<a class="top-line__social-link" href="#">
+							<svg width="30" height="30">
+								<use xlink:href="img/sprite.svg#vk"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="top-line__social-item">
+						<a class="top-line__social-link" href="#">
+							<svg width="30" height="30">
+								<use xlink:href="img/sprite.svg#insta"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+
+				<p class="bot-line__copyright">Fixer24 © 2018. Все права защищены.</p>
+				<p class="bot-line__developers">Разработка и продвижение — <a class="bot-line__link" href="https://one-pix.ru/" target="_blank" rel="noopener noreferrer">OnePix</a></p>
+				<a class="bot-line__sitemap" href="#">Карта сайта</a>
+			</div>
+		</section>
+
+	</footer>
+
+	<section class="popup mini-pop">
+		<h2 class="visually-hidden">Проверка базы клиентов по номеру телефона</h2>
+		<input class="popup__phone" type="tel" placeholder="+7(800)700-55-22" required>
+		<a class="popup__button button" href="#">Проверить</a>
+		<button class="popup__close" type="button" aria-label="Закрыть попап"></button>
+	</section>
+
+	<section class="popup review-pop">
+		<h2 class="visually-hidden">Форма отправки нового отзыва</h2>
+		<form class="review-pop__form" action="" method="post">
+			<div class="review-pop__phone-wrapper">
+				<input class="review-pop__phone" type="tel" placeholder="+7(800)700-55-22" required>
+				<a class="review-pop__confirm button" href="#">Подтвердить</a>
+			</div>
+			<select class="review-pop__theme" name="theme">
+				<option selected hidden>Тема отзыва</option>
+			</select>
+			<textarea class="review-pop__text" placeholder="Текст отзыва" required></textarea>
+			<div class="review__rate-wrapper">
+				<p class="review__rate-text">Оцените нас:</p>
+				<div class="review__rate rating-count">
+					<input id="c1" type="radio" name="rating" value="1" required>
+					<label for="c1">1</label>
+					<input id="c2" type="radio" name="rating" value="2">
+					<label for="c2">2</label>
+					<input id="c3" type="radio" name="rating" value="3">
+					<label for="c3">3</label>
+					<input id="c4" type="radio" name="rating" value="4">
+					<label for="c4">4</label>
+					<input id="c5" type="radio" name="rating" value="5">
+					<label for="c5">5</label>
+				</div>
+			</div>
+			<button class="review-pop__submit button" type="submit">Отправить отзыв</button>
+		</form>
+		<button class="review-pop__close" type="button" aria-label="Закрыть попап"></button>
+	</section>
+
+	<section class="popup order-pop">
+		<h2 class="order-pop__title">Статус заказа</h2>
+
+		<table class="order-pop__list">
+			<tr class="order-pop__section">
+				<td class="order-pop__field">Заказ №</td>
+				<td class="order-pop__value order-pop__value--number">945813</td>
+			</tr>
+
+			<tr class="order-pop__section order-pop__section--name">
+				<td class="order-pop__field">Данные клиента</td>
+				<td class="order-pop__value">
+					<span class="order-pop__name">Константин<br>Константинопольский<br>+7(999)999-99-99</span>
+					<small class="order-pop__phone">Konst@gmail.com<br>Санкт-Петербург,<br>Ленинский пр-т, д.151, кв.515</small>
+				</td>
+			</tr>
+
+			<tr class="order-pop__section order-pop__section--time">
+				<td class="order-pop__field">Создан</td>
+				<td class="order-pop__value">12.12.2012<br>12:15:59</td>
+				<td class="order-pop__field">Изменен</td>
+				<td class="order-pop__value">12.12.2012<br>12:15:59</td>
+			</tr>
+
+			<tr class="order-pop__section order-pop__section--status">
+				<td class="order-pop__field">Статус</td>
+				<td class="order-pop__value">
+					<ul class="order-pop__status-list">
+						<li class="order-pop__status-item">Принят</li>
+						<li class="order-pop__status-item">В работе</li>
+						<li class="order-pop__status-item order-pop__status-item--active">Оплачен</li>
+						<li class="order-pop__status-item">Отменен</li>
+						<li class="order-pop__status-item">Готов</li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+		<button class="order-pop__close" type="button" aria-label="Закрыть попап"></button>
+	</section>
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/svgxuse.min.js" defer></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnbk0_LmmROHjZJMxPDDDashzTir59MDY"></script>
+	<script src="js/start.js"></script>
+
+</body>
+</html>

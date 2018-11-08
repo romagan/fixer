@@ -1,0 +1,216 @@
+.logos {
+	padding: 30px 0;
+
+	background-color: $gray-bg;
+
+	.container > .container {
+		padding-right: 0;
+	}
+
+	& > .container {
+		position: relative;
+	}
+}
+
+.logos__title {
+	margin: 0;
+	margin-bottom: 30px;
+
+	font-size: $mobile-title-font;
+	line-height: $mobile-title-lineheight;
+	font-weight: 300;
+
+	span {
+		font-weight: 600;
+	}
+}
+
+.logos__subtitle {
+	margin: 0;
+	margin-bottom: 30px;
+
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 300;
+}
+
+.logos__list {
+	@include list;
+
+  display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
+}
+
+.logos__item {
+	width: 50%;
+}
+
+.logos__link {
+	display: block;
+
+	color: $dark;
+	font-weight: 400;
+
+	svg {
+		width: 100%;
+		fill: #b0b1b2;
+	}
+}
+
+.logos__back {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+
+  width: 40px;
+  height: 25px;
+
+  background-color: transparent;
+  border: 0;
+
+  transform: rotate(-90deg);
+
+  cursor: pointer;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: 5px;
+    top: 50%;
+
+    width: 18px;
+    height: 2px;
+
+    background-color: $dark;
+
+    transform: translateY(-50%) rotate(-45deg);
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    right: 5px;
+    top: 50%;
+
+    width: 18px;
+    height: 2px;
+
+    background-color: $dark;
+
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  &:hover {
+
+  	&::before,
+  	&::after {
+  		background-color: $accent;
+  	}
+  }
+
+  &:active,
+  &:focus {
+  	opacity: 0.8;
+  }
+}
+
+@media (min-width: $tablet-width) {
+
+	.logos {
+		padding: 50px 0;
+	}
+
+	.logos__back {
+		left: 50px;
+	}
+
+	.logos__title {
+		margin-bottom: 50px;
+	}
+
+	.logos__subtitle {
+		margin-bottom: 30px;
+	}
+
+	.logos__list {
+		margin-bottom: 20px;
+	}
+
+	.logos__item {
+		width: 25%;
+		padding-left: 0;
+
+		text-align: center;
+	}
+
+	.logos__button {
+		width: 60%;
+		margin: 0 auto;
+	}
+}
+
+@media (min-width: $desktop-width) {
+
+	.logos {
+		padding: 80px 0;
+	}
+
+	.logos__back {
+		left: 150px;
+		top: 10px;
+	}
+
+	.logos__title {
+		font-size: $desktop-title-font;
+		line-height: $desktop-title-lineheight;
+	}
+
+	.logos__subtitle {
+		margin-bottom: 50px;
+
+		font-size: 26px;
+		line-height: 28px;
+		font-weight: 300;
+	}
+
+	.logos__item {
+		min-height: 28px;
+	}
+
+	.logos__link {
+		height: 100%;
+
+		vertical-align: middle;
+
+		font-size: 20px;
+		line-height: 22px;
+
+		&:hover svg {
+			@include transition;
+
+			fill: #000000;
+			transform: scale(1.2);
+		}
+
+		&:active svg,
+		&:focus svg {
+			opacity: 0.8;
+		}
+	}
+
+	.logos__button {
+		width: 30%;
+		padding-top: 13px;
+		padding-bottom: 13px;
+	}
+}
+
+@media (min-width: $xl-width) {
+
+	.logos__back {
+		left: 300px;
+	}
+}

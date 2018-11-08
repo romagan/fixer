@@ -1,0 +1,190 @@
+.choose {
+	padding: 30px 0;
+
+	background-color: $gray-bg;
+
+	.container > .container {
+		padding-right: 0;
+	}
+
+	& > .container {
+		position: relative;
+	}
+}
+
+.choose__back {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+
+  width: 40px;
+  height: 25px;
+
+  background-color: transparent;
+  border: 0;
+
+  transform: rotate(-90deg);
+
+  cursor: pointer;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: 5px;
+    top: 50%;
+
+    width: 18px;
+    height: 2px;
+
+    background-color: $dark;
+
+    transform: translateY(-50%) rotate(-45deg);
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    right: 5px;
+    top: 50%;
+
+    width: 18px;
+    height: 2px;
+
+    background-color: $dark;
+
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  &:hover {
+
+  	&::before,
+  	&::after {
+  		background-color: $accent;
+  	}
+  }
+
+  &:active,
+  &:focus {
+  	opacity: 0.8;
+  }
+}
+
+.choose__title {
+	margin: 0;
+	margin-bottom: 30px;
+
+	font-size: $mobile-title-font;
+	line-height: $mobile-title-lineheight;
+	font-weight: 300;
+
+	span {
+		font-weight: 600;
+	}
+}
+
+.choose__subtitle {
+	margin: 0;
+	margin-bottom: 30px;
+
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 300;
+}
+
+.choose__list {
+	@include list;
+
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.choose__item {
+	width: 33.3%;
+}
+
+.choose__link {
+	display: block;
+}
+
+.choose__image {
+	width: 70%;
+	height: auto;
+
+	&:hover {
+		@include transition;
+
+		transform: translateZ(0) scale(1.3);
+	}
+}
+
+.choose__image--laptop {
+	width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+
+	.choose {
+		padding: 50px 0;
+	}
+
+	.choose__back {
+		left: 50px;
+	}
+
+	.choose__title {
+		margin-bottom: 50px;
+	}
+
+	.choose__subtitle {
+		margin-bottom: 50px;
+	}
+
+	.choose__image {
+		width: 60%;
+		height: auto;
+	}
+
+	.choose__image--laptop {
+		width: 80%;
+	}
+}
+
+@media (min-width: $desktop-width) {
+
+	.choose {
+		padding: 80px 0;
+	}
+
+	.choose__back {
+		left: 150px;
+		top: 10px;
+	}
+
+	.choose__title {
+		font-size: $desktop-title-font;
+		line-height: $desktop-title-lineheight;
+	}
+
+	.choose__subtitle {
+		margin-bottom: 50px;
+
+		font-size: 26px;
+		line-height: 28px;
+		font-weight: 300;
+	}
+
+	.choose__link {
+		padding-top: 13px;
+		padding-bottom: 13px;
+	}
+}
+
+@media (min-width: $xl-width) {
+
+	.choose__back {
+		left: 300px;
+	}
+}

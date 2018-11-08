@@ -1,0 +1,158 @@
+.card {
+	position: relative;
+
+	padding: 30px 0;
+}
+
+.card__image {
+	display: block;
+	width: 50%;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+.card__title {
+	margin: 0;
+	margin-bottom: 30px;
+
+  font-size: $mobile-title-font;
+  line-height: $mobile-title-lineheight;
+	font-weight: 600;
+	text-align: center;
+
+	b {
+		font-weight: 900;
+		white-space: nowrap;
+	}
+}
+
+.card__numbers {
+	margin: 0;
+	margin-bottom: 30px;
+}
+
+.card__field {
+	padding: 10px;
+
+	color: #ffffff;
+	font-weight: 600;
+
+	background-color: $gray;
+	border: 3px solid $gray;
+}
+
+.card__value {
+	margin: 0;
+	padding: 10px;
+
+	font-weight: 700;
+
+	border: 3px solid $gray;
+}
+
+.card__description {
+	max-height: 400px;
+
+	overflow-y: auto;
+}
+
+.card__description p {
+  margin: 0;
+  margin-bottom: 10px;
+
+  &:last-child {
+  	margin-bottom: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+
+	.card {
+		padding: 50px 0;
+	}
+
+	.card > .container {
+		display: flex;
+	}
+
+	.card__image {
+		width: 40%;
+		height: 50%;
+		margin-right: 30px;
+		margin-bottom: 0;
+	}
+
+	.card__numbers {
+		display: flex;
+	}
+
+	.card__field {
+		width: 60%;
+		box-sizing: border-box;
+	}
+
+	.card__value {
+		width: 40%;
+		margin-left: -1%;
+		box-sizing: border-box;
+	}
+
+	.card__description {
+		max-height: 300px;
+	}
+}
+
+@media (min-width: $desktop-width) {
+
+	.card {
+		padding: 80px 0;
+
+		&::after {
+			content: "";
+
+			position: absolute;
+			top: 25%;
+			bottom: 0;
+			right: 20px;
+
+			width: 1px;
+
+			background-color: darken($gray-bg, 10%);
+		}
+	}
+
+	.card > .container {
+		padding-right: 250px;
+	}
+
+	.card__title {
+		font-size: $desktop-title-font;
+		line-height: $desktop-title-lineheight;
+		text-align: left;
+	}
+
+	.card__image {
+		width: 30%;
+		margin-right: 50px;
+	}
+
+	.card__field {
+		padding: 20px;
+		padding-right: 10px;
+
+		font-size: 22px;
+		line-height: 30px;
+	}
+
+	.card__value {
+		padding: 20px;
+		padding-right: 10px;
+
+		font-size: 22px;
+		line-height: 30px;
+	}
+
+	.card__description {
+		max-height: 200px;
+	}
+}
